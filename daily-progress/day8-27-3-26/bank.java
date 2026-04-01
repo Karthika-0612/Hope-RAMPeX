@@ -28,5 +28,6 @@ public class bank{
         info.deposit(depositamt);
         info.withdraw(withdrawamt);
         info.checkBalance();
+        sc.close();
     }
 } 
