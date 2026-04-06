@@ -13,6 +13,8 @@ public class NotificationFactory {
                 return new SMSNotification(user, message);
             case "push":
                 return new PushNotification(user, message);
+            case "whatsapp":
+                return new WhatsappNotification(user, message);
             default:
                 throw new IllegalArgumentException("Invalid notification type");
         }

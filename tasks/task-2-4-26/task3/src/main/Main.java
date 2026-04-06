@@ -13,6 +13,8 @@ public class Main {
         service.sendNotification(sms);
         Notification push = NotificationFactory.createNotification("push", user1, "New offer available!");
         service.sendNotification(push);
+        Notification whatsapp = NotificationFactory.createNotification("whatsapp", user1, "Welcome to WhatsApp notifications!");
+        service.sendNotification(whatsapp);
         Notification invalid = NotificationFactory.createNotification("email", new User("Test", null, null), "Hello");
         service.sendNotification(invalid);
     }
