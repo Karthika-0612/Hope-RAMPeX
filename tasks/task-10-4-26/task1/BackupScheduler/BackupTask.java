@@ -20,7 +20,7 @@ public class BackupTask implements Runnable {
 
             // Check if source exists
             if (!Files.exists(source)) {
-                System.out.println("❌ Source file not found: " + sourcePath);
+                System.out.println(" Source file not found: " + sourcePath);
                 return;
             }
 
@@ -35,7 +35,7 @@ public class BackupTask implements Runnable {
             System.out.println("Backup successful at: " + java.time.LocalTime.now());
 
         } catch (IOException e) {
-            System.out.println("❌ Backup failed: " + e.getMessage());
+            System.out.println("Backup failed: " + e.getMessage());
         }
     }
 }
